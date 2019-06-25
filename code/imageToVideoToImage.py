@@ -5,6 +5,10 @@ from videoToImages import videoToImages
 
 
 def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate):
+    """
+    First converts all images in 'input' to mp4 (one frame video)
+    Then converts them one by one to the original file format
+    """
     # EX: input = '../data'
     # EX: output = '../output2'
     tempDirectory = input+'/../temp'
@@ -16,7 +20,7 @@ def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate):
         shutil.copy2(input + '/' + file, copy_file)
         input2 = tempDirectory+'/im%3d.'+file.split('.')[-1]
         output2 = tempDirectory+'/vid001.mp4'
-        imagesToVideo(input2, output2, factor, None, bf, gp, frameRate)
+        imagesToVideo(input2, output2, factor, size, bf, gp, frameRate)
         os.remove(copy_file)
 
         # mp4 to tif
