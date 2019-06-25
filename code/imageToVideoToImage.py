@@ -6,7 +6,7 @@ from videoToImages import videoToImages
 
 def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate):
     """
-    First converts all images in 'input' to mp4 (one frame video)
+    First converts all images in 'input' to mp4 (video with one frame)
     Then converts them one by one to the original file format
     """
     # EX: input = '../data'
@@ -23,7 +23,7 @@ def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate):
         imagesToVideo(input2, output2, factor, size, bf, gp, frameRate)
         os.remove(copy_file)
 
-        # mp4 to tif
+        # mp4 to image
         input2 = output2
         output3 = output + '/' + file
         videoToImages(input2, output3)
