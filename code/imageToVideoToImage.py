@@ -8,16 +8,19 @@ from videoToImages import videoToImages
 
 
 def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate,
-                        fileFormat=('bmp', 'jpg', 'tif', 'png'), fileStarts='', fileEnds='', fileContains='', outputFilePrefix=''):
+                        fileFormat=('bmp', 'jpg', 'tif', 'png'), fileStarts='', fileEnds='',
+                        fileContains='', fileNotContains=None, outputFilePrefix=''):
     """
     First converts all images in 'input' to mp4 (video with one frame)
     Then converts them one by one to the original file format
     """
     # EX: input = '../data'
-    # EX: output = '../output2' This must be empty.
+    # EX: output = '../output2' This must be an empty directory.
     # EX: fileFormat = ('bmp', 'jpg', 'tif', 'png')
     # EX: fileStarts = 'img'
     # EX: fileEnds = ''
+    # EX: fileContains = 'copy'
+    # EX: fileNotContains = ['original','copy'] or None
     # EX: outputFilePrefix = 'output%03d' or 'output' or ''
     tempDirectory = input + '/../temp'
     os.mkdir(tempDirectory)
@@ -31,6 +34,14 @@ def imageToVideoToImage(input, output, factor, size, bf, gp, frameRate,
             if not (fileNameWithoutFormat.startswith(fileStarts) and fileNameWithoutFormat.endswith(fileEnds)
                     and (fileContains in fileNameWithoutFormat)):
                 continue
+            if fileNotContains is not None:
+                flag = True
+                for s in fileNotContains:
+                    if s in fileNameWithoutFormat:
+                        flag=False
+                        break
+                if flag == False:
+                    continue
 
             fileCount +=1
             file = root + '/' + f

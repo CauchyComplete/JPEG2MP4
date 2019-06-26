@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/code/main.py" line="26" />
+    <bookmark url="file://$PROJECT_DIR$/code/main.py" line="28" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="604396c5-ff3e-401c-a8a2-90b1a65b070c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/imageToVideoToImage.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/imageToVideoToImage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/imagesToVideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/imagesToVideo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/removeAllFilesIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/removeAllFilesIn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/videoToImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/videoToImages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/AU_T_001.bmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output2/AU_T_001.bmp" beforeDir="false" />
     </list>
@@ -22,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="304">
+              <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
               <folding>
                 <element signature="e#35#74#0" expanded="true" />
               </folding>
@@ -43,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/imageToVideoToImage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="342">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -94,8 +90,8 @@
         <option value="$PROJECT_DIR$/code/removeAllFilesIn.py" />
         <option value="$PROJECT_DIR$/code/videoToImages.py" />
         <option value="$PROJECT_DIR$/code/imagesToVideo.py" />
-        <option value="$PROJECT_DIR$/code/imageToVideoToImage.py" />
         <option value="$PROJECT_DIR$/code/main.py" />
+        <option value="$PROJECT_DIR$/code/imageToVideoToImage.py" />
       </list>
     </option>
   </component>
@@ -261,6 +257,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+          <folding>
+            <element signature="e#35#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/removeAllFilesIn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -270,20 +276,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/imageToVideoToImage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="342">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding>
-            <element signature="e#35#74#0" expanded="true" />
           </folding>
         </state>
       </provider>

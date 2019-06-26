@@ -12,14 +12,15 @@ from removeAllFilesIn import removeAllFilesIn
 
 def main():
     # image -> mp4 with one frame -> image
-    input = 'C:/Users/Frank/Desktop/Zhou_Datasets/Columbia/ImSpliceDataset'  # '../data'
-    output = '../output2/Columbia/tampered'
+    input = 'C:/Users/Frank/Desktop/Zhou_Datasets/CASIA/benchmark_data'  # EX: '../data'
+    output = '../output2/CASIA/original' # EX: '../output2'
     factor = '1000k'
     bf = 0
     gp = 1
     frameRate = 1
     removeAllFilesIn(output)
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate, fileStarts='SP', outputFilePrefix='Columbia_spliced_%03d_')
+    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate,
+                        fileNotContains=['1','2','3','4','copy','original'], outputFilePrefix='CASIA_original_%03d_')
 
 
     # images to mp4
