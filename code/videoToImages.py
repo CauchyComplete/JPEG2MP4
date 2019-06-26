@@ -1,3 +1,6 @@
+# Kwon Myung Joon
+# June 25, 2019
+
 import skvideo.io  # install sk-video
 from PIL import Image  # install Pillow
 

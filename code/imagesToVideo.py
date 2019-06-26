@@ -1,3 +1,6 @@
+# Kwon Myung Joon
+# June 25, 2019
+
 # need ffmpeg installed and bin added to PATH
 
 import os
