@@ -17,57 +17,42 @@ def main():
     gp = 1
     frameRate = 1
 
-    input = "C:/Users/Frank/Desktop/useful_data/CASIA/orig"
-    output = "C:/Users/Frank/Desktop/output3/CASIA/orig"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-    input = "C:/Users/Frank/Desktop/useful_data/CASIA/tamp"
-    output = "C:/Users/Frank/Desktop/output3/CASIA/tamp"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-    input = "C:/Users/Frank/Desktop/useful_data/Columbia/orig"
-    output = "C:/Users/Frank/Desktop/output3/Columbia/orig"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-    input = "C:/Users/Frank/Desktop/useful_data/Columbia/tamp"
-    output = "C:/Users/Frank/Desktop/output3/Columbia/tamp"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-    input = "C:/Users/Frank/Desktop/useful_data/COVERAGE/orig"
-    output = "C:/Users/Frank/Desktop/output3/COVERAGE/orig"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-    input = "C:/Users/Frank/Desktop/useful_data/COVERAGE/tamp"
-    output = "C:/Users/Frank/Desktop/output3/COVERAGE/tamp"
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
-
-
-    assert False
-    # image -> mp4 with one frame -> image
-    input = '../data'  # EX: '../data'
-    output = '../output2' # EX: '../output2'
-    factor = '1000k'
-    bf = 0
-    gp = 1
-    frameRate = 1
+    input_path = "C:/Users/Frank/Desktop/ImageManipulationDetection-PengZhou-2018/data/CASIA2_train_images/tamp"
+    output = "C:/Users/Frank/Desktop/ImageManipulationDetection-PengZhou-2018/data/CASIA2_train_iframes/tamp"
     removeAllFilesIn(output)
-    imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
+    imageToVideoToImage(input_path, output, factor, None, bf, gp, frameRate)
+
+    input_path = "C:/Users/Frank/Desktop/ImageManipulationDetection-PengZhou-2018/eval/CASIA2_test_images/tamp"
+    output = "C:/Users/Frank/Desktop/ImageManipulationDetection-PengZhou-2018/eval/CASIA2_test_iframes/tamp"
+    removeAllFilesIn(output)
+    imageToVideoToImage(input_path, output, factor, None, bf, gp, frameRate)
 
 
-    # images to mp4
-    input = '../data/AU_S_%3d.bmp'  # EX: '../data/AU_S_%3d.bmp'
-    output = '../output1/vid.mp4'  # EX: '../output1/vid.mp4'
-    factor = '1000k'
-    bf = 0
-    gp = 1
-    frameRate = 1
-    imagesToVideo(input, output, factor, None, bf, gp, frameRate)
+    # image -> mp4 with one frame -> image
+    # input = '../data'  # EX: '../data'
+    # output = '../output2' # EX: '../output2'
+    # factor = '1000k'
+    # bf = 0
+    # gp = 1
+    # frameRate = 1
+    # removeAllFilesIn(output)
+    # imageToVideoToImage(input, output, factor, None, bf, gp, frameRate)
+
+
+    # # images to mp4
+    # input = '../data/AU_S_%3d.bmp'  # EX: '../data/AU_S_%3d.bmp'
+    # output = '../output1/vid.mp4'  # EX: '../output1/vid.mp4'
+    # factor = '1000k'
+    # bf = 0
+    # gp = 1
+    # frameRate = 1
+    # imagesToVideo(input, output, factor, None, bf, gp, frameRate)
 
 
     # mp4 to tif
-    input = '../output1/vid.mp4'
-    output = '../output2/img%03d.tif'  # EX: '../output2/img%03d.tif'
-    videoToImages(input, output)
+    # input = '../output1/groundtruth.mp4'
+    # output = '../output2/img%03d.tif'  # EX: '../output2/img%03d.tif'
+    # videoToImages(input, output)
 
 
 

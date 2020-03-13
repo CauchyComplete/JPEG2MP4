@@ -14,7 +14,7 @@ def rename_files(path, replace_old, replace_new):
 def main():
     path = "C:/Users/Frank/Desktop/ImageManipulationDetection-PengZhou-2018/data/COVERAGE/mask"
     replace_old = "forged"
-    replace_new = ""
+    replace_new = "t"
     rename_files(path, replace_old, replace_new)
 
 if __name__ == "__main__":
